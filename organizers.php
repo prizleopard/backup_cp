@@ -6,7 +6,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "organizers";
+$dbname = "sdms";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

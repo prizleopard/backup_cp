@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root"; // Your database username
 $password = ""; // Your database password
-$dbname = "organizers"; // Updated database name
+$dbname = "sdms"; // Updated database name
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 

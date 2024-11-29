@@ -477,7 +477,7 @@ main .color-button {
                              $servername1 = "localhost"; // or your server address
                             $username1 = "root"; // replace with your database username
                             $password1 = ""; // replace with your database password
-                            $dbname1 = "venues"; // your database name
+                            $dbname1 = "sdms"; // your database name
                             
                             // Create connection
                             $conn1 = new mysqli($servername1, $username1, $password1, $dbname1);

@@ -514,7 +514,7 @@ if (isset($_GET['edit_id'])) {
                         $servername = "localhost";
                         $username = "root";
                         $password = "";
-                        $dbname = "venues";
+                        $dbname = "sdms";
                         
                         $conn = new mysqli($servername, $username, $password, $dbname);
                         $sql = "SELECT * FROM venues";

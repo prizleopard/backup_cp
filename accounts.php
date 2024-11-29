@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "organizers"; // Database for organizers
+$dbname = "sdms"; // Database for organizers
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
