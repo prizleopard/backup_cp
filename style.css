@@ -1,0 +1,201 @@
+* {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+.container {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-bottom: 60px;
+   animation: fadeIn 1.5s ease-in-out; /* Container animation */
+   background: linear-gradient(135deg, #1d3557, #457b9d); /* Sports theme background */
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.container .content {
+   text-align: center;
+}
+
+.container .content h3 {
+   font-size: 30px;
+   color: #f4a261; /* Vibrant orange */
+   animation: slideInLeft 1.2s ease; /* Slide-in effect for h3 */
+}
+
+@keyframes slideInLeft {
+   from {
+      opacity: 0;
+      transform: translateX(-30px);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+.container .content h3 span {
+   background: #e63946; /* Bright red */
+   color: #fff;
+   border-radius: 5px;
+   padding: 0 15px;
+}
+
+.container .content h1 {
+   font-size: 50px;
+   color: #f4a261; /* Matches h3 for consistency */
+   animation: zoomIn 1.5s ease; /* Zoom-in animation for h1 */
+}
+
+@keyframes zoomIn {
+   from {
+      transform: scale(0.8);
+      opacity: 0;
+   }
+   to {
+      transform: scale(1);
+      opacity: 1;
+   }
+}
+
+.container .content h1 span {
+   color: #e63946; /* Bright red for emphasis */
+}
+
+.container .content p {
+   font-size: 25px;
+   margin-bottom: 20px;
+   color: #fff; /* Light text for better contrast */
+}
+
+.container .content .btn {
+   display: inline-block;
+   padding: 6px 20px; /* Mini-sized buttons */
+   font-size: 16px; /* Smaller font */
+   background: #f4a261; /* Orange for primary buttons */
+   color: #1d3557; /* Dark blue text */
+   margin: 0 5px;
+   text-transform: capitalize;
+   border-radius: 3px; /* Matches mini button design */
+   transition: background 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.container .content .btn:hover {
+   background: #e63946; /* Red for hover */
+   color: #fff; /* White text on hover */
+}
+
+.form-container {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-bottom: 60px;
+   background: linear-gradient(135deg, #1d3557, #457b9d); /* Sports theme */
+}
+
+.form-container form {
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+   background: #fff;
+   text-align: center;
+   width: 500px;
+   animation: bounceIn 1.5s ease; /* Bounce animation for form */
+}
+
+@keyframes bounceIn {
+   0% {
+      transform: scale(0.9);
+      opacity: 0;
+   }
+   50% {
+      transform: scale(1.05);
+      opacity: 0.8;
+   }
+   100% {
+      transform: scale(1);
+      opacity: 1;
+   }
+}
+
+.form-container form h3 {
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color: #1d3557; /* Dark blue */
+}
+
+.form-container form input,
+.form-container form select {
+   width: 100%;
+   padding: 10px 15px;
+   font-size: 17px;
+   margin: 8px 0;
+   background: #f0f8ff; /* Light blue input background */
+   border-radius: 5px;
+   transition: box-shadow 0.3s ease; /* Smooth focus effect */
+}
+
+.form-container form input:focus,
+.form-container form select:focus {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container form select option {
+   background: #fff;
+}
+
+.form-container form .form-btn {
+   background: #f4a261; /* Matches button theme */
+   color: #1d3557; /* Dark text */
+   text-transform: capitalize;
+   font-size: 18px; /* Slightly smaller font */
+   padding: 8px 20px; /* Mini button size */
+   cursor: pointer;
+   transition: transform 0.3s ease; /* Button hover effect */
+}
+
+.form-container form .form-btn:hover {
+   background: #e63946; /* Red hover */
+   color: #fff;
+   transform: scale(1.05);
+}
+
+.form-container form p {
+   margin-top: 10px;
+   font-size: 20px;
+   color: #333;
+}
+
+.form-container form p a {
+   color: #e63946; /* Bright red links */
+}
+
+.form-container form .error-msg {
+   margin: 10px 0;
+   display: block;
+   background: crimson;
+   color: #fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding: 10px;
+}

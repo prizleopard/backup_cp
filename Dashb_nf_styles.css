@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeef1;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Primary color for headers */
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.post-form input[type="text"],
+.post-form textarea,
+.post-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.post-form input[type="text"]:focus,
+.post-form textarea:focus {
+    border-color: #007bff; /* Highlight border on focus */
+}
+
+.post-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.post-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.posts {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-2px); /* Lift the post on hover */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.media {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: auto;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn.edit {
+    background-color: #007bff;
+}
+
+.btn.delete {
+    background-color: #dc3545;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px); /* Slightly lift buttons on hover */
+}
+
+.cancel {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    background-color: #5a6268;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.back-button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 20px; /* Space below the button */
+}
+
+.btn-back {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.btn-back:active {
+    background-color: #003f7f; /* Even darker color on click */
+}
